@@ -17,31 +17,32 @@ const serviceData = {
         title: "Renovação Premium",
         description: "O luxo de ter seu estofado como novo. Utilizamos no sistema de higienização produtos reconhecidos por sua eficiência profissional, com ação bactericida e proteção residual contra novas sujeiras. Ideal para quem busca renovação profunda com preservação do tecido, sem excesso de química agressiva.",
         benefits: [
+            "Remoção da sujidade",
             "Eliminação de 99,9% das bactérias",
-            "Ação prolongada contra recontaminação",
+            "Ação prolongada contra recontaminação por até 6 meses",
             "Realce imediato de cor e textura",
             "Toque suave e aparência de novo"
         ],
         price: "R$ 399,00",
         promoPrice: "R$ 251,37",
-        image: "Imagens/Renovacao%20Premium.jpg"
+        image: "Renovacao%20Premium.jpg"
     },
     "diamante-especializada": {
         title: "Diamante Especializada",
         description: "Tecnologia e personalização no nível máximo. Nossa equipe realiza diagnóstico detalhado da sujeira e aplica uma combinação personalizada de produtos de alta performance. Preserva o tecido com mínima agressão mecânica, ideal para peças de alto valor ou delicadas.",
         benefits: [
-            "Tratamento químico sob medida",
-            "Proteção contra desgaste precoce",
-            "Remoção de manchas complexas",
+            "Tratamento químico sob medida para remoção da sujeira com mais eficiência",
+            "Proteção contra desgaste precoce, diminuindo a esfregação",
+            "Remoção de manchas complexas, que não saem com qualquer produto",
             "Preservação da originalidade do estofado",
             "Eliminação de 99,9% das bactérias",
-            "Ação prolongada contra recontaminação",
+            "Ação prolongada contra recontaminação por até 6 meses",
             "Realce imediato de cor e textura",
             "Toque suave e aparência de novo"
         ],
         price: "R$ 499,00",
         promoPrice: "R$ 314,37",
-        image: "Imagens/Diamante%20Especializada.jpg"
+        image: "Diamante%20Especializada.jpg"
     },
     "renovacao-sensitive": {
         title: "Renovação Sensitive",
@@ -50,11 +51,15 @@ const serviceData = {
             "Preservação de cor, textura e estrutura de tecidos naturais",
             "Evita manchas químicas",
             "Higienização profunda e delicada",
-            "Ideal para tecidos nobres"
+            "Ideal para tecidos nobres",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação por até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo"
         ],
         price: "R$ 429,00",
         promoPrice: "R$ 270,27",
-        image: "Imagens/Renovacao%20Sensitive.jpg"
+        image: "Renovacao%20Sensitive.jpg"
     },
     "diamante-sensitive": {
         title: "Diamante Sensitive",
@@ -63,24 +68,31 @@ const serviceData = {
             "Cuidado especializado para tecidos nobres e raros",
             "Produtos específicos para fibras naturais",
             "Segurança e eficiência na limpeza",
-            "Preservação da originalidade do estofado"
+            "Tratamento químico sob medida para remoção da sujeira com mais eficiência",
+            "Proteção contra desgaste precoce, diminuindo a esfregação",
+            "Remoção de manchas complexas, que não saem com qualquer produto",
+            "Preservação da originalidade do estofado",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação por até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo"
         ],
         price: "R$ 499,00",
         promoPrice: "R$ 314,37",
-        image: "Imagens/Diamante%20Sensitive.jpg"
+        image: "Diamante%20Sensitive.jpg"
     },
     "blindagem": {
         title: "Blindagem",
         description: "Crie um escudo invisível contra líquidos e manchas. Aplicando a hidrorrepelência a líquidos, produto profissional que cria uma barreira protetora contra líquidos e sujeiras, facilitando a limpeza futura e preservando o investimento no seu estofado. Ideal para prolongar a aparência de novo do estofado ao máximo, pois evitará a sujeira.",
         benefits: [
-            "Repele água, óleos e líquidos",
+            "Repele água, óleos và líquidos",
             "Protege contra manchas",
             "Mantém o tecido limpo por muito mais tempo",
             "Prolonga a vida útil do estofado"
         ],
         price: "R$ 349,00",
         promoPrice: "R$ 219,87",
-        image: "Imagens/Blindagem.jpg"
+        image: "Blindagem.jpg"
     },
     "limpeza-titan": {
         title: "Limpeza Titan",
@@ -93,46 +105,68 @@ const serviceData = {
         ],
         price: "R$ 349,00",
         promoPrice: "R$ 219,87",
-        image: "Imagens/Limpeza%20Titan.jpg"
+        image: "Limpeza%20Titan.jpg"
     },
     "auto-golden-care": {
         title: "Auto Golden Care",
-        description: "Higienização especializada com remoção de manchas e odores, preservando materiais, com proteção residual de 6 meses.",
+        description: "Higienização especializada com remoção de sujeiras, manchas e odores, preservando materiais, com proteção residual de 6 meses.",
         benefits: [
             "Remoção de manchas e odores",
-            "Preservação dos materiais internos do veículo",
-            "Proteção residual por 6 meses",
-            "Ambiente interno mais agradável"
+            "Ambiente interno mais agradável",
+            "Remoção da sujidade",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação de até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo",
+            "Ficando a critério escolher ou bancos ou tapetes, carpetes và estofados"
         ],
         price: "R$ 570,00",
         promoPrice: "R$ 359,10",
-        image: "Imagens/Auto%20Golden%20Care.png"
+        image: "Auto%20Golden%20Care.png"
     },
     "auto-platina-lux": {
         title: "Auto Platina Lux",
         description: "Higienização premium de bancos, tapetes, carpete e porta-malas com proteção residual de 6 meses.",
         benefits: [
             "Higienização completa de bancos, tapetes, carpete e porta-malas",
-            "Proteção residual por 6 meses",
             "Acabamento premium",
-            "Renovação do interior do veículo"
+            "Renovação do interior do veículo",
+            "Remoção de manchas e odores",
+            "Ambiente interno mais agradável",
+            "Remoção da sujidade",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação de até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo"
         ],
         price: "R$ 750,00",
         promoPrice: "R$ 472,50",
-        image: "Imagens/Auto%20Platina%20Lux.png"
+        image: "Auto%20Platina%20Lux.png"
     },
     "auto-diamond": {
         title: "Auto Diamond",
         description: "Limpeza completa: bancos, carpete, teto, laterais e porta-malas. Com combinação personalizada de produtos para manchas e sujeiras específicas, preservando o tecido, com proteção residual de 6 meses.",
         benefits: [
+            "Tratamento químico sob medida para remoção da sujeira com mais eficiência",
             "Limpeza abrangente de todo o interior do veículo",
             "Produtos personalizados para manchas específicas",
             "Preservação do tecido e materiais",
-            "Proteção residual por 6 meses"
+            "Acabamento premium",
+            "Renovação do interior do veículo",
+            "Remoção de manchas e odores",
+            "Ambiente interno mais agradável",
+            "Remoção da sujidade",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação de até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo",
+            "Proteção contra desgaste precoce, diminuindo a esfregação",
+            "Preservação da originalidade do estofado",
+            "Toque suave e aparência de novo"
         ],
         price: "R$ 910,00",
         promoPrice: "R$ 573,30",
-        image: "Imagens/Auto%20Diamond.jpg"
+        image: "Auto%20Diamond.jpg"
     },
     "auto-blindagem-impermax": {
         title: "Auto Blindagem Impermax",
@@ -145,20 +179,21 @@ const serviceData = {
         ],
         price: "R$ 400,00",
         promoPrice: "R$ 252,00",
-        image: "Imagens/Auto%20Blindagem%20Impermax.png"
+        image: "Auto%20Blindagem%20Impermax.png"
     },
     "auto-titan": {
         title: "Auto Titan",
         description: "Limpeza econômica de bancos, tapetes e carpetes ou forros, a depender do veículo.",
         benefits: [
             "Limpeza econômica e eficiente para o interior do veículo",
-            "Foco em áreas de maior uso (bancos, tapetes, carpetes)",
+            "Foco em áreas de maior uso (bancos, tapetes, carpetes - alternativamente)",
+            "Ação bactericida",
             "Opção flexível dependendo do veículo",
             "Custo-benefício ideal"
         ],
         price: "R$ 520,00",
         promoPrice: "R$ 327,60",
-        image: "Imagens/Auto%20Titan.jpg"
+        image: "Auto%20Titan.jpg"
     }
 };
 
@@ -242,23 +277,23 @@ if (window.location.pathname.includes('sobre-servicos.html')) {
 const resultsData = [
     {
         title: "Sofá da Sala",
-        before: "Imagens/Sofa%20Sala%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Imagens/Sofa%20Sala%20Depois.jpg"  // Caminho da imagem de alta resolução
+        before: "Sofa%20Sala%20Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Sofa%20Sala%20Depois.jpg"  // Caminho da imagem de alta resolução
     },
     {
         title: "Banco do Carro",
-        before: "Imagens/Banco%20Carro%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Imagens/Banco%20Carro%20Depois.jpg"  // Caminho da imagem de alta resolução
+        before: "Banco%20Carro%20Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Banco%20Carro%20Depois.jpg"  // Caminho da imagem de alta resolução
     },
     {
         title: "Colchão de Casal",
-        before: "Imagens/Colchao%20Casal%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Imagens/Colchao%20Casal%20Depois.jpg"  // Caminho da imagem de alta resolução
+        before: "Colchao%20Casal%20Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Colchao%20Casal%20Depois.jpg"  // Caminho da imagem de alta resolução
     },
     {
         title: "Cadeira de Jantar",
-        before: "Imagens/Cadeira%20Jantar%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Imagens/Cadeira%20Jantar%20Depois.jpg"  // Caminho da imagem de alta resolução
+        before: "Cadeira%20Jantar%20Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Cadeira%20Jantar%20Depois.jpg"  // Caminho da imagem de alta resolução
     }
 ];
 
@@ -293,12 +328,12 @@ function populateCarousel() {
                 <div class="img-wrapper">
                     <img src="${item.before}" alt="${item.title} - Antes">
                     <p class="label">Antes</p>
-                    <button class="zoom-button" onclick="openModal('${item.before}')"><i class="fas fa-search-plus"></i> Zoom</button>
+                    <button class="zoom-button" onclick="openModal('${item.before}')"><i class="fas fa-search-plus"></i> Ampliar</button>
                 </div>
                 <div class="img-wrapper">
                     <img src="${item.after}" alt="${item.title} - Depois">
                     <p class="label">Depois</p>
-                    <button class="zoom-button" onclick="openModal('${item.after}')"><i class="fas fa-search-plus"></i> Zoom</button>
+                    <button class="zoom-button" onclick="openModal('${item.after}')"><i class="fas fa-search-plus"></i> Ampliar</button>
                 </div>
             </div>
         `;
@@ -338,15 +373,28 @@ function openModal(imageSrc) {
     const modalImg = document.getElementById("modalImage");
     const zoomSlider = document.getElementById("zoomSlider");
     
-    modal.style.display = "flex"; /* Exibe o modal */
-    modalImg.src = imageSrc; /* Define a imagem */
-    modalImg.style.transform = "scale(1)"; /* Reseta o zoom */
-    zoomSlider.value = 100; /* Reseta o slider para 100% */
+    modal.classList.add("show");
+    modalImg.src = imageSrc;
+    modalImg.style.transform = "scale(1)";
+    zoomSlider.value = 100;
+    
+    // Desabilita o scroll da página quando o modal está aberto
+    document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
     const modal = document.getElementById("imageModal");
-    modal.style.display = "none"; /* Esconde o modal */
+    modal.classList.remove("show");
+    
+    // Reabilita o scroll da página
+    document.body.style.overflow = "auto";
+}
+
+function adjustZoom() {
+    const modalImg = document.getElementById("modalImage");
+    const zoomSlider = document.getElementById("zoomSlider");
+    const zoomValue = zoomSlider.value;
+    modalImg.style.transform = `scale(${zoomValue / 100})`;
 }
 
 // Fechar o modal ao clicar fora da imagem
@@ -357,18 +405,33 @@ window.onclick = function(event) {
     }
 }
 
-// Função para ajustar o zoom da imagem
-function adjustZoom() {
-    const modalImg = document.getElementById("modalImage");
-    const zoomSlider = document.getElementById("zoomSlider");
-    const zoomValue = zoomSlider.value;
-    modalImg.style.transform = `scale(${zoomValue / 100})`; /* Ajusta o zoom com base no valor do slider */
-}
-
+// Fechar o modal com a tecla ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
 
 // Chama a função ao carregar a página, se for a página resultados.html
 if (window.location.pathname.includes('resultados.html')) {
-    document.addEventListener('DOMContentLoaded', populateCarousel);
+    document.addEventListener('DOMContentLoaded', function() {
+        populateCarousel();
+        
+        // Adiciona event listeners para os botões de navegação do carrossel
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (currentIndex < resultsData.length - itemsPerPage) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+    });
 }
 
 // --- Funcionalidades Adicionais (Frontend Stubs) ---
@@ -384,7 +447,6 @@ if (window.location.pathname.includes('resultados.html')) {
 //     localStorage.setItem('site_visits', 1);
 // }
 // console.log("Total de visitas (local):", localStorage.getItem('site_visits'));
-
 
 // 2. Chat (Frontend - apenas um placeholder)
 // Para um chat funcional, você precisaria integrar uma plataforma de chat de terceiros.
