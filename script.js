@@ -281,19 +281,29 @@ const resultsData = [
         after: "Sofa%20Sala%20Depois.jpg"  // Caminho da imagem de alta resolução
     },
     {
-        title: "Banco do Carro",
-        before: "Banco%20Carro%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Banco%20Carro%20Depois.jpg"  // Caminho da imagem de alta resolução
-    },
-    {
         title: "Colchão de Casal",
         before: "Colchao%20Casal%20Antes.jpg", // Caminho da imagem de alta resolução
         after: "Colchao%20Casal%20Depois.jpg"  // Caminho da imagem de alta resolução
     },
     {
-        title: "Cadeira de Jantar",
-        before: "Cadeira%20Jantar%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Cadeira%20Jantar%20Depois.jpg"  // Caminho da imagem de alta resolução
+        title: "Cama de Casal",
+        before: "CamaCasal2Antes.jpg", // Caminho da imagem de alta resolução
+        after: "CamaCasal2Depois.jpg"  // Caminho da imagem de alta resolução
+    },
+    {
+        title: "Colchão de Casal 3",
+        before: "CamaCasal3Antes.jpg", // Caminho da imagem de alta resolução
+        after: "CamaCasal3Depois.jpg"  // Caminho da imagem de alta resolução
+    },
+    {
+        title: "Sofá Sala 2",
+        before: "Sofa2Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Sofa2Depois.jpg"  // Caminho da imagem de alta resolução
+    },
+    {
+        title: "Cama de Casal 4",
+        before: "CamaCasal2Antes.jpg", // Caminho da imagem de alta resolução
+        after: "CamaCasal2Depois.jpg"  // Caminho da imagem de alta resolução
     }
 ];
 
