@@ -17,31 +17,32 @@ const serviceData = {
         title: "Renovação Premium",
         description: "O luxo de ter seu estofado como novo. Utilizamos no sistema de higienização produtos reconhecidos por sua eficiência profissional, com ação bactericida e proteção residual contra novas sujeiras. Ideal para quem busca renovação profunda com preservação do tecido, sem excesso de química agressiva.",
         benefits: [
+            "Remoção da sujidade",
             "Eliminação de 99,9% das bactérias",
-            "Ação prolongada contra recontaminação",
+            "Ação prolongada contra recontaminação por até 6 meses",
             "Realce imediato de cor e textura",
             "Toque suave e aparência de novo"
         ],
         price: "R$ 399,00",
         promoPrice: "R$ 251,37",
-        image: "Imagens/Renovacao%20Premium.jpg"
+        image: "Renovacao%20Premium.jpg" // Ajuste o caminho da imagem
     },
     "diamante-especializada": {
         title: "Diamante Especializada",
         description: "Tecnologia e personalização no nível máximo. Nossa equipe realiza diagnóstico detalhado da sujeira e aplica uma combinação personalizada de produtos de alta performance. Preserva o tecido com mínima agressão mecânica, ideal para peças de alto valor ou delicadas.",
         benefits: [
-            "Tratamento químico sob medida",
-            "Proteção contra desgaste precoce",
-            "Remoção de manchas complexas",
+            "Tratamento químico sob medida para remoção da sujeira com mais eficiência",
+            "Proteção contra desgaste precoce, diminuindo a esfregação",
+            "Remoção de manchas complexas, que não saem com qualquer produto",
             "Preservação da originalidade do estofado",
             "Eliminação de 99,9% das bactérias",
-            "Ação prolongada contra recontaminação",
+            "Ação prolongada contra recontaminação por até 6 meses",
             "Realce imediato de cor e textura",
             "Toque suave e aparência de novo"
         ],
         price: "R$ 499,00",
         promoPrice: "R$ 314,37",
-        image: "Imagens/Diamante%20Especializada.jpg"
+        image: "Diamante%20Especializada.jpg" // Ajuste o caminho da imagem
     },
     "renovacao-sensitive": {
         title: "Renovação Sensitive",
@@ -50,11 +51,15 @@ const serviceData = {
             "Preservação de cor, textura e estrutura de tecidos naturais",
             "Evita manchas químicas",
             "Higienização profunda e delicada",
-            "Ideal para tecidos nobres"
+            "Ideal para tecidos nobres",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação por até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo"
         ],
         price: "R$ 429,00",
         promoPrice: "R$ 270,27",
-        image: "Imagens/Renovacao%20Sensitive.jpg"
+        image: "Renovacao%20Sensitive.jpg" // Ajuste o caminho da imagem
     },
     "diamante-sensitive": {
         title: "Diamante Sensitive",
@@ -63,11 +68,18 @@ const serviceData = {
             "Cuidado especializado para tecidos nobres e raros",
             "Produtos específicos para fibras naturais",
             "Segurança e eficiência na limpeza",
-            "Preservação da originalidade do estofado"
+            "Tratamento químico sob medida para remoção da sujeira com mais eficiência",
+            "Proteção contra desgaste precoce, diminuindo a esfregação",
+            "Remoção de manchas complexas, que não saem com qualquer produto",
+            "Preservação da originalidade do estofado",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação por até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo"
         ],
         price: "R$ 499,00",
         promoPrice: "R$ 314,37",
-        image: "Imagens/Diamante%20Sensitive.jpg"
+        image: "Diamante%20Sensitive.jpg" // Ajuste o caminho da imagem
     },
     "blindagem": {
         title: "Blindagem",
@@ -80,7 +92,7 @@ const serviceData = {
         ],
         price: "R$ 349,00",
         promoPrice: "R$ 219,87",
-        image: "Imagens/Blindagem.jpg"
+        image: "Blindagem.jpg" // Ajuste o caminho da imagem
     },
     "limpeza-titan": {
         title: "Limpeza Titan",
@@ -93,46 +105,68 @@ const serviceData = {
         ],
         price: "R$ 349,00",
         promoPrice: "R$ 219,87",
-        image: "Imagens/Limpeza%20Titan.jpg"
+        image: "Limpeza%20Titan.jpg" // Ajuste o caminho da imagem
     },
     "auto-golden-care": {
         title: "Auto Golden Care",
-        description: "Higienização especializada com remoção de manchas e odores, preservando materiais, com proteção residual de 6 meses.",
+        description: "Higienização especializada com remoção de sujeiras, manchas e odores, preservando materiais, com proteção residual de 6 meses.",
         benefits: [
             "Remoção de manchas e odores",
-            "Preservação dos materiais internos do veículo",
-            "Proteção residual por 6 meses",
-            "Ambiente interno mais agradável"
+            "Ambiente interno mais agradável",
+            "Remoção da sujidade",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação de até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo",
+            "Ficando a critério escolher ou bancos ou tapetes, carpetes e estofados"
         ],
         price: "R$ 570,00",
         promoPrice: "R$ 359,10",
-        image: "Imagens/Auto%20Golden%20Care.png"
+        image: "Auto%20Golden%20Care.png" // Ajuste o caminho da imagem
     },
     "auto-platina-lux": {
         title: "Auto Platina Lux",
         description: "Higienização premium de bancos, tapetes, carpete e porta-malas com proteção residual de 6 meses.",
         benefits: [
             "Higienização completa de bancos, tapetes, carpete e porta-malas",
-            "Proteção residual por 6 meses",
             "Acabamento premium",
-            "Renovação do interior do veículo"
+            "Renovação do interior do veículo",
+            "Remoção de manchas e odores",
+            "Ambiente interno mais agradável",
+            "Remoção da sujidade",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação de até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo"
         ],
         price: "R$ 750,00",
         promoPrice: "R$ 472,50",
-        image: "Imagens/Auto%20Platina%20Lux.png"
+        image: "Auto%20Platina%20Lux.png" // Ajuste o caminho da imagem
     },
     "auto-diamond": {
         title: "Auto Diamond",
         description: "Limpeza completa: bancos, carpete, teto, laterais e porta-malas. Com combinação personalizada de produtos para manchas e sujeiras específicas, preservando o tecido, com proteção residual de 6 meses.",
         benefits: [
+            "Tratamento químico sob medida para remoção da sujeira com mais eficiência",
             "Limpeza abrangente de todo o interior do veículo",
             "Produtos personalizados para manchas específicas",
             "Preservação do tecido e materiais",
-            "Proteção residual por 6 meses"
+            "Acabamento premium",
+            "Renovação do interior do veículo",
+            "Remoção de manchas e odores",
+            "Ambiente interno mais agradável",
+            "Remoção da sujidade",
+            "Eliminação de 99,9% das bactérias",
+            "Ação prolongada contra recontaminação de até 6 meses",
+            "Realce imediato de cor e textura",
+            "Toque suave e aparência de novo",
+            "Proteção contra desgaste precoce, diminuindo a esfregação",
+            "Preservação da originalidade do estofado",
+            "Toque suave e aparência de novo"
         ],
         price: "R$ 910,00",
         promoPrice: "R$ 573,30",
-        image: "Imagens/Auto%20Diamond.jpg"
+        image: "Auto%20Diamond.jpg" // Ajuste o caminho da imagem
     },
     "auto-blindagem-impermax": {
         title: "Auto Blindagem Impermax",
@@ -145,20 +179,21 @@ const serviceData = {
         ],
         price: "R$ 400,00",
         promoPrice: "R$ 252,00",
-        image: "Imagens/Auto%20Blindagem%20Impermax.png"
+        image: "Auto%20Blindagem%20Impermax.png" // Ajuste o caminho da imagem
     },
     "auto-titan": {
         title: "Auto Titan",
         description: "Limpeza econômica de bancos, tapetes e carpetes ou forros, a depender do veículo.",
         benefits: [
             "Limpeza econômica e eficiente para o interior do veículo",
-            "Foco em áreas de maior uso (bancos, tapetes, carpetes)",
+            "Foco em áreas de maior uso (bancos, tapetes, carpetes - alternativamente)",
+            "Ação bactericida",
             "Opção flexível dependendo do veículo",
             "Custo-benefício ideal"
         ],
         price: "R$ 520,00",
         promoPrice: "R$ 327,60",
-        image: "Imagens/Auto%20Titan.jpg"
+        image: "Auto%20Titan.jpg" // Ajuste o caminho da imagem
     }
 };
 
@@ -242,23 +277,33 @@ if (window.location.pathname.includes('sobre-servicos.html')) {
 const resultsData = [
     {
         title: "Sofá da Sala",
-        before: "Imagens/Sofa%20Sala%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Imagens/Sofa%20Sala%20Depois.jpg"  // Caminho da imagem de alta resolução
-    },
-    {
-        title: "Banco do Carro",
-        before: "Imagens/Banco%20Carro%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Imagens/Banco%20Carro%20Depois.jpg"  // Caminho da imagem de alta resolução
+        before: "Sofa%20Sala%20Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Sofa%20Sala%20Depois.jpg"  // Caminho da imagem de alta resolução
     },
     {
         title: "Colchão de Casal",
-        before: "Imagens/Colchao%20Casal%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Imagens/Colchao%20Casal%20Depois.jpg"  // Caminho da imagem de alta resolução
+        before: "Colchao%20Casal%20Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Colchao%20Casal%20Depois.jpg"  // Caminho da imagem de alta resolução
     },
     {
-        title: "Cadeira de Jantar",
-        before: "Imagens/Cadeira%20Jantar%20Antes.jpg", // Caminho da imagem de alta resolução
-        after: "Imagens/Cadeira%20Jantar%20Depois.jpg"  // Caminho da imagem de alta resolução
+        title: "Cama de Casal",
+        before: "CamaCasal2Antes.jpg", // Caminho da imagem de alta resolução
+        after: "CamaCasal2Depois.jpg"  // Caminho da imagem de alta resolução
+    },
+    {
+        title: "Colchão de Casal 3",
+        before: "CamaCasal3Antes.jpg", // Caminho da imagem de alta resolução
+        after: "CamaCasal3Depois.jpg"  // Caminho da imagem de alta resolução
+    },
+    {
+        title: "Sofá Sala 2",
+        before: "Sofa2Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Sofa2Depois.jpg"  // Caminho da imagem de alta resolução
+    },
+    {
+        title: "Cadeira de Jantar", // Adicionado o item que faltava
+        before: "Cadeira%20Jantar%20Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Cadeira%20Jantar%20Depois.jpg"  // Caminho da imagem de alta resolução
     }
 ];
 
@@ -293,12 +338,12 @@ function populateCarousel() {
                 <div class="img-wrapper">
                     <img src="${item.before}" alt="${item.title} - Antes">
                     <p class="label">Antes</p>
-                    <button class="zoom-button" onclick="openModal('${item.before}')"><i class="fas fa-search-plus"></i> Zoom</button>
+                    <button class="zoom-button" onclick="openModal('${item.before}')"><i class="fas fa-search-plus"></i> Ampliar</button>
                 </div>
                 <div class="img-wrapper">
                     <img src="${item.after}" alt="${item.title} - Depois">
                     <p class="label">Depois</p>
-                    <button class="zoom-button" onclick="openModal('${item.after}')"><i class="fas fa-search-plus"></i> Zoom</button>
+                    <button class="zoom-button" onclick="openModal('${item.after}')"><i class="fas fa-search-plus"></i> Ampliar</button>
                 </div>
             </div>
         `;
@@ -338,15 +383,28 @@ function openModal(imageSrc) {
     const modalImg = document.getElementById("modalImage");
     const zoomSlider = document.getElementById("zoomSlider");
     
-    modal.style.display = "flex"; /* Exibe o modal */
-    modalImg.src = imageSrc; /* Define a imagem */
-    modalImg.style.transform = "scale(1)"; /* Reseta o zoom */
-    zoomSlider.value = 100; /* Reseta o slider para 100% */
+    modal.classList.add("show");
+    modalImg.src = imageSrc;
+    modalImg.style.transform = "scale(1)";
+    zoomSlider.value = 100;
+    
+    // Desabilita o scroll da página quando o modal está aberto
+    document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
     const modal = document.getElementById("imageModal");
-    modal.style.display = "none"; /* Esconde o modal */
+    modal.classList.remove("show");
+    
+    // Reabilita o scroll da página
+    document.body.style.overflow = "auto";
+}
+
+function adjustZoom() {
+    const modalImg = document.getElementById("modalImage");
+    const zoomSlider = document.getElementById("zoomSlider");
+    const zoomValue = zoomSlider.value;
+    modalImg.style.transform = `scale(${zoomValue / 100})`;
 }
 
 // Fechar o modal ao clicar fora da imagem
@@ -357,75 +415,207 @@ window.onclick = function(event) {
     }
 }
 
-// Função para ajustar o zoom da imagem
-function adjustZoom() {
-    const modalImg = document.getElementById("modalImage");
-    const zoomSlider = document.getElementById("zoomSlider");
-    const zoomValue = zoomSlider.value;
-    modalImg.style.transform = `scale(${zoomValue / 100})`; /* Ajusta o zoom com base no valor do slider */
-}
-
+// Fechar o modal com a tecla ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
 
 // Chama a função ao carregar a página, se for a página resultados.html
 if (window.location.pathname.includes('resultados.html')) {
-    document.addEventListener('DOMContentLoaded', populateCarousel);
+    document.addEventListener('DOMContentLoaded', function() {
+        populateCarousel();
+        // Os event listeners já são adicionados dentro de populateCarousel(), não precisa repetir aqui
+    });
 }
 
-// --- Funcionalidades Adicionais (Frontend Stubs) ---
+// --- Funcionalidades Adicionais ---
 
-// 1. Contagem de Acessos (Frontend - apenas um placeholder)
-// Para uma contagem real, você precisaria de um backend ou Google Analytics.
-// Exemplo de placeholder:
-// if (localStorage.getItem('site_visits')) {
-//     let visits = parseInt(localStorage.getItem('site_visits'));
-//     visits++;
-//     localStorage.setItem('site_visits', visits);
-// } else {
-//     localStorage.setItem('site_visits', 1);
-// }
-// console.log("Total de visitas (local):", localStorage.getItem('site_visits'));
+// 1. Proteção Anticópia (Bloqueia seleção e clique direito)
+document.addEventListener('DOMContentLoaded', () => {
+    const noCopyElements = document.querySelectorAll('.no-copy');
 
+    noCopyElements.forEach(element => {
+        element.addEventListener('contextmenu', (e) => {
+            e.preventDefault(); // Bloqueia o clique direito
+        });
 
-// 2. Chat (Frontend - apenas um placeholder)
-// Para um chat funcional, você precisaria integrar uma plataforma de chat de terceiros.
-// Exemplo de botão de chat flutuante (adicione ao HTML se quiser):
-/*
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-    <button style="background-color: #2ecc71; color: white; border: none; border-radius: 50%; width: 60px; height: 60px; font-size: 24px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.2);" onclick="openChat()">
-        <i class="fab fa-whatsapp"></i>
-    </button>
-</div>
-<script>
-    function openChat() {
-        // Substitua pelo link do seu WhatsApp ou script de chat
-        window.open('https://wa.me/+5519991908256', '_blank');
-    }
-</script>
-*/
+        element.addEventListener('selectstart', (e) => {
+            e.preventDefault(); // Bloqueia a seleção de texto
+        });
 
-// 3. Login (Frontend - apenas um placeholder)
-// Para um sistema de login funcional, você precisaria de um backend para autenticação.
-// Exemplo de formulário de login (adicione ao HTML se quiser):
-/*
-<div id="loginModal" style="display:none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
-    <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 400px; border-radius: 10px; text-align: center;">
-        <h2>Login</h2>
-        <input type="text" placeholder="Usuário" style="width: calc(100% - 20px); padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
-        <input type="password" placeholder="Senha" style="width: calc(100% - 20px); padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
-        <button style="background-color: #6a89cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="performLogin()">Entrar</button>
-        <button style="background-color: #ccc; color: #333; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;" onclick="closeLoginModal()">Fechar</button>
-    </div>
-</div>
-<script>
-    function openLoginModal() {
-        document.getElementById('loginModal').style.display = 'block';
+        element.addEventListener('copy', (e) => {
+            e.preventDefault(); // Bloqueia a cópia
+            alert('Conteúdo protegido contra cópia.');
+        });
+
+        // Opcional: Bloquear arrastar e soltar (para imagens, por exemplo)
+        element.addEventListener('dragstart', (e) => {
+            e.preventDefault();
+        });
+    });
+});
+
+// 2. Alternar Modo Claro/Escuro
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    // Verifica a preferência do usuário no localStorage ou no sistema
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        if (savedTheme === 'dark-mode') {
+            toggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Ícone de sol para dark mode
+        } else {
+            toggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Ícone de lua para light mode
+        }
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // Se não houver preferência salva, verifica a preferência do sistema
+        body.classList.add('dark-mode');
+        toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('theme', 'dark-mode');
+    } else {
+        toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('theme', 'light-mode');
     }
-    function closeLoginModal() {
-        document.getElementById('loginModal').style.display = 'none';
+
+    toggleButton.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            toggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Mudar para ícone de lua
+            localStorage.setItem('theme', 'light-mode');
+        } else {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            toggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Mudar para ícone de sol
+            localStorage.setItem('theme', 'dark-mode');
+        }
+    });
+});
+
+// 3. Ocultar conteúdo se JavaScript estiver desativado (já implementado com <noscript>)
+// A tag <noscript> no HTML já cuida disso. Se o JavaScript estiver desativado, o CSS dentro de <noscript> será aplicado, ocultando o body.
+
+// 4. Proteção Anti-impressão (já implementado no CSS com @media print)
+// A regra `@media print` no `style.css` já oculta o `body` por padrão ao tentar imprimir.
+// Se você adicionou a classe `no-print` a elementos específicos, eles serão ocultados.
+
+// --- Novo: Botão de Compartilhamento ---
+document.addEventListener('DOMContentLoaded', () => {
+    const shareButton = document.getElementById('shareButton');
+    if (shareButton) {
+        shareButton.addEventListener('click', async () => {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: document.title,
+                        url: window.location.href
+                    });
+                    console.log('Página compartilhada com sucesso!');
+                } catch (error) {
+                    console.error('Erro ao compartilhar:', error);
+                }
+            } else {
+                // Fallback para navegadores que não suportam a API Web Share
+                alert('Seu navegador não suporta a função de compartilhamento. Você pode copiar o link manualmente: ' + window.location.href);
+            }
+        });
     }
-    function performLogin() {
-        alert('Funcionalidade de login requer backend.');
-        // Aqui você enviaria os dados para um servidor para autenticação
+});
+
+// --- Novo: Bloqueio contra Captura de Tela (Experimental e Limitado) ---
+// Esta funcionalidade é experimental e sua eficácia pode variar significativamente
+// entre navegadores, sistemas operacionais e dispositivos. Não é uma garantia de segurança.
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Bloqueio para navegadores baseados em Chromium (Chrome, Edge, Brave, etc.)
+    // Tenta usar a API `captureStream` para criar um "stream vazio"
+    // que pode interferir com algumas ferramentas de captura.
+    // A eficácia é limitada e pode não funcionar em todos os cenários.
+    if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+        try {
+            // Tenta obter um stream de tela, mas não o usa.
+            // Em alguns casos, isso pode acionar avisos de privacidade
+            // ou impedir a captura de tela em certas configurações.
+            // É uma abordagem "hacky" e não confiável.
+            navigator.mediaDevices.getDisplayMedia({ video: true, audio: true })
+                .then(stream => {
+                    // Não faz nada com o stream, apenas o obtém.
+                    // Pode ser necessário parar o stream para evitar consumo de recursos.
+                    // stream.getTracks().forEach(track => track.stop());
+                    console.log("Tentativa de bloqueio de captura de tela ativada (Chromium-based).");
+                })
+                .catch(err => {
+                    console.warn("Não foi possível ativar o bloqueio de captura de tela (Chromium-based):", err);
+                });
+        } catch (e) {
+            console.error("Erro ao tentar ativar o bloqueio de captura de tela (Chromium-based):", e);
+        }
     }
-</script>
-*/
+
+    // Bloqueio para navegadores que suportam a propriedade `-webkit-user-select: none;`
+    // e `user-select: none;` (já coberto pelo CSS no-copy, mas reforçado aqui)
+    document.body.style.webkitUserSelect = 'none'; // Para navegadores WebKit
+    document.body.style.userSelect = 'none';     // Padrão
+
+    // Bloqueio de eventos de teclado comuns para captura de tela (Print Screen, Alt+Print Screen)
+    // Isso é facilmente contornável e pode interferir na usabilidade.
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'PrintScreen' || (e.altKey && e.key === 'PrintScreen')) {
+            e.preventDefault();
+            alert('Captura de tela desativada para esta página.');
+        }
+    });
+
+    // Bloqueio de eventos de teclado para desenvolvedores (F12, Ctrl+Shift+I, etc.)
+    // Isso também é facilmente contornável e pode ser irritante para usuários legítimos.
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J')) {
+            e.preventDefault();
+            alert('Ferramentas de desenvolvedor desativadas para esta página.');
+        }
+    });
+
+    // Bloqueio de clique direito (já coberto pelo no-copy, mas reforçado)
+    document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+
+    // Bloqueio de arrastar e soltar (já coberto pelo no-copy, mas reforçado)
+    document.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+    });
+
+    // Bloqueio de cópia (já coberto pelo no-copy, mas reforçado)
+    document.addEventListener('copy', (e) => {
+        e.preventDefault();
+        alert('Conteúdo protegido contra cópia.');
+    });
+
+    // Bloqueio de seleção de texto (já coberto pelo no-copy, mas reforçado)
+    document.addEventListener('selectstart', (e) => {
+        e.preventDefault();
+    });
+
+    // Adiciona uma camada transparente sobre o conteúdo para tentar dificultar a captura
+    // Isso pode afetar a interatividade e a acessibilidade.
+    const overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.zIndex = '9999'; // Abaixo dos botões flutuantes, mas acima do conteúdo
+    overlay.style.pointerEvents = 'none'; // Permite cliques através da overlay
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.000001)'; // Quase transparente
+    document.body.appendChild(overlay);
+
+    // Adiciona um evento para detectar quando a janela perde o foco (pode indicar troca de aplicativo para captura)
+    window.addEventListener('blur', () => {
+        console.log('Janela perdeu o foco. Possível tentativa de captura de tela.');
+        // Você pode adicionar lógica aqui, como exibir uma mensagem ou escurecer a tela.
+    });
+});

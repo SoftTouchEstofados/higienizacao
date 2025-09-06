@@ -329,7 +329,7 @@ p {
     display: flex;
     align-items: flex-start;
     font-size: 1.1em;
-    color: #444;
+    color: #999;
 }
 
 .pre-appointment-info .info-list li i {
@@ -403,7 +403,7 @@ p {
 
 .catalog-item .item-description {
     font-size: 0.95em;
-    color: #666;
+    color: #999;
     padding: 0 20px 20px 20px;
     flex-grow: 1; /* Permite que a descrição ocupe o espaço restante */
 }
@@ -487,7 +487,7 @@ p {
 
 #service-detail-content p {
     font-size: 1.1em;
-    color: #555;
+    color: #999;
     margin-bottom: 30px;
     text-align: justify; /* Alinhar texto da descrição */
 }
@@ -516,7 +516,7 @@ p {
 
 .service-benefits li {
     font-size: 1.1em;
-    color: #444;
+    color: #999;
     margin-bottom: 10px;
     position: relative;
     padding-left: 25px;
@@ -535,7 +535,7 @@ p {
     list-style: decimal;
     padding-left: 25px;
     font-size: 1.1em;
-    color: #444;
+    color: #999;
 }
 
 .process-list li {
@@ -543,7 +543,7 @@ p {
 }
 
 .process-list li strong {
-    color: #2c3e50;
+    color: #4682B4;
 }
 
 .process-info {
@@ -758,7 +758,7 @@ p {
     height: 100%; /* Altura total */
     overflow: auto; /* Habilita scroll se a imagem for maior que a tela */
     background-color: rgba(0,0,0,0.9); /* Fundo preto com transparência */
-    display: flex; /* Usar flexbox para centralizar */
+    display: none; /* Usar flexbox para centralizar */
     justify-content: center; /* Centralizar horizontalmente */
     align-items: center; /* Centralizar verticalmente */
 }
@@ -1166,4 +1166,271 @@ p {
     border-radius: 50%; /* Bordas arredondadas do thumb */
     background: #6a89cc; /* Cor do thumb */
     cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark-mode .main-header {
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .logo {
+    color: #f0f0f0;
+}
+
+body.dark-mode .main-nav ul li a {
+    color: #ccc;
+}
+
+body.dark-mode .main-nav ul li a:hover,
+body.dark-mode .main-nav ul li a.active {
+    color: #8ab4f8; /* Um azul mais claro para o dark mode */
+}
+
+body.dark-mode .main-nav ul li a::after {
+    background-color: #8ab4f8;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode p {
+    color: #ccc;
+}
+
+body.dark-mode .hero-section h1,
+body.dark-mode .hero-section p {
+    color: #fff; /* Manter branco no hero */
+}
+
+body.dark-mode .about-section,
+body.dark-mode .pre-appointment-info,
+body.dark-mode .catalog-section,
+body.dark-mode .promotions-section,
+body.dark-mode .avisos-section,
+body.dark-mode #service-detail-section {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .why-choose-us,
+body.dark-mode .client-messages,
+body.dark-mode .promo-section {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode .reason-item,
+body.dark-mode .pre-appointment-info .info-list li,
+body.dark-mode .catalog-item,
+body.dark-mode .message-item,
+body.dark-mode .promo-item,
+body.dark-mode .testimonial-item,
+body.dark-mode #service-detail-content .service-benefits-container,
+body.dark-mode #service-detail-content .service-process-container,
+body.dark-mode .carousel-container {
+    background-color: #3a3a3a;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .reason-item i,
+body.dark-mode .pre-appointment-info .info-list li i,
+body.dark-mode .commitment-icons i,
+body.dark-mode .message-item h3 i,
+body.dark-mode .promo-item .promo-icon,
+body.dark-mode .service-benefits li::before {
+    color: #8ab4f8;
+}
+
+body.dark-mode .catalog-item .price-base {
+    color: #ff8a80; /* Vermelho mais suave para dark mode */
+}
+
+body.dark-mode .catalog-item .price-original {
+    color: #aaa;
+}
+
+body.dark-mode .discount-badge {
+    background-color: #ff8a80;
+}
+
+body.dark-mode .main-footer {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .main-footer h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .main-footer p {
+    color: #aaa;
+}
+
+body.dark-mode .main-footer .contact-info i {
+    color: #8ab4f8;
+}
+
+body.dark-mode .main-footer .contact-info a {
+    color: #ccc;
+}
+
+body.dark-mode .main-footer .contact-info a:hover {
+    color: #8ab4f8;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #8ab4f8;
+    border-color: #8ab4f8;
+    color: #1a1a1a;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #6a9de8;
+    border-color: #6a9de8;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #4CAF50; /* Verde mais escuro para dark mode */
+    border-color: #4CAF50;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: #388E3C;
+    border-color: #388E3C;
+}
+
+body.dark-mode .zoom-button {
+    background-color: rgba(138, 180, 248, 0.9);
+}
+
+body.dark-mode .zoom-button:hover {
+    background-color: #6a9de8;
+}
+
+body.dark-mode .carousel-button {
+    background-color: rgba(138, 180, 248, 0.8);
+}
+
+body.dark-mode .carousel-button:hover {
+    background-color: #6a9de8;
+}
+
+body.dark-mode .carousel-button:disabled {
+    background-color: rgba(100, 100, 100, 0.6);
+}
+
+body.dark-mode .zoom-controls {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .zoom-controls input[type="range"]::-webkit-slider-thumb {
+    background: #8ab4f8;
+}
+
+body.dark-mode .zoom-controls input[type="range"]::-webkit-slider-thumb:hover {
+    background: #6a9de8;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6a89cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #4a69bd;
+    transform: scale(1.1);
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #8ab4f8;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background-color: #6a9de8;
+}
+
+/* Botão de Compartilhamento */
+.share-button {
+    position: fixed;
+    bottom: 80px; /* Posição acima do dark-mode-toggle */
+    right: 20px;
+    background-color: #20B2AA; /* Cor para o botão de compartilhamento */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.share-button:hover {
+    background-color: #1A938A;
+    transform: scale(1.1);
+}
+
+/* Dark Mode para o botão de compartilhamento */
+body.dark-mode .share-button {
+    background-color: #48D1CC;
+}
+
+body.dark-mode .share-button:hover {
+    background-color: #20B2AA;
+}
+
+/* Ajuste de responsividade para o botão de compartilhamento */
+@media (max-width: 480px) {
+    .share-button {
+        bottom: 70px; /* Ajuste para telas menores */
+        width: 45px;
+        height: 45px;
+        font-size: 1.3em;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        visibility: hidden; /* Hide everything by default */
+    }
+    .no-print {
+        display: none !important; /* Ensure no-print elements are hidden */
+    }
+    /* You can selectively make certain elements visible for printing if needed */
+    /* For example, if you want to print only the main content: */
+    /* main {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    } */
 }
