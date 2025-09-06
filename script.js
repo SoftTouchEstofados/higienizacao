@@ -502,3 +502,120 @@ document.addEventListener('DOMContentLoaded', () => {
 // 4. Proteção Anti-impressão (já implementado no CSS com @media print)
 // A regra `@media print` no `style.css` já oculta o `body` por padrão ao tentar imprimir.
 // Se você adicionou a classe `no-print` a elementos específicos, eles serão ocultados.
+
+// --- Novo: Botão de Compartilhamento ---
+document.addEventListener('DOMContentLoaded', () => {
+    const shareButton = document.getElementById('shareButton');
+    if (shareButton) {
+        shareButton.addEventListener('click', async () => {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: document.title,
+                        url: window.location.href
+                    });
+                    console.log('Página compartilhada com sucesso!');
+                } catch (error) {
+                    console.error('Erro ao compartilhar:', error);
+                }
+            } else {
+                // Fallback para navegadores que não suportam a API Web Share
+                alert('Seu navegador não suporta a função de compartilhamento. Você pode copiar o link manualmente: ' + window.location.href);
+            }
+        });
+    }
+});
+
+// --- Novo: Bloqueio contra Captura de Tela (Experimental e Limitado) ---
+// Esta funcionalidade é experimental e sua eficácia pode variar significativamente
+// entre navegadores, sistemas operacionais e dispositivos. Não é uma garantia de segurança.
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Bloqueio para navegadores baseados em Chromium (Chrome, Edge, Brave, etc.)
+    // Tenta usar a API `captureStream` para criar um "stream vazio"
+    // que pode interferir com algumas ferramentas de captura.
+    // A eficácia é limitada e pode não funcionar em todos os cenários.
+    if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
+        try {
+            // Tenta obter um stream de tela, mas não o usa.
+            // Em alguns casos, isso pode acionar avisos de privacidade
+            // ou impedir a captura de tela em certas configurações.
+            // É uma abordagem "hacky" e não confiável.
+            navigator.mediaDevices.getDisplayMedia({ video: true, audio: true })
+                .then(stream => {
+                    // Não faz nada com o stream, apenas o obtém.
+                    // Pode ser necessário parar o stream para evitar consumo de recursos.
+                    // stream.getTracks().forEach(track => track.stop());
+                    console.log("Tentativa de bloqueio de captura de tela ativada (Chromium-based).");
+                })
+                .catch(err => {
+                    console.warn("Não foi possível ativar o bloqueio de captura de tela (Chromium-based):", err);
+                });
+        } catch (e) {
+            console.error("Erro ao tentar ativar o bloqueio de captura de tela (Chromium-based):", e);
+        }
+    }
+
+    // Bloqueio para navegadores que suportam a propriedade `-webkit-user-select: none;`
+    // e `user-select: none;` (já coberto pelo CSS no-copy, mas reforçado aqui)
+    document.body.style.webkitUserSelect = 'none'; // Para navegadores WebKit
+    document.body.style.userSelect = 'none';     // Padrão
+
+    // Bloqueio de eventos de teclado comuns para captura de tela (Print Screen, Alt+Print Screen)
+    // Isso é facilmente contornável e pode interferir na usabilidade.
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'PrintScreen' || (e.altKey && e.key === 'PrintScreen')) {
+            e.preventDefault();
+            alert('Captura de tela desativada para esta página.');
+        }
+    });
+
+    // Bloqueio de eventos de teclado para desenvolvedores (F12, Ctrl+Shift+I, etc.)
+    // Isso também é facilmente contornável e pode ser irritante para usuários legítimos.
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J')) {
+            e.preventDefault();
+            alert('Ferramentas de desenvolvedor desativadas para esta página.');
+        }
+    });
+
+    // Bloqueio de clique direito (já coberto pelo no-copy, mas reforçado)
+    document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+
+    // Bloqueio de arrastar e soltar (já coberto pelo no-copy, mas reforçado)
+    document.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+    });
+
+    // Bloqueio de cópia (já coberto pelo no-copy, mas reforçado)
+    document.addEventListener('copy', (e) => {
+        e.preventDefault();
+        alert('Conteúdo protegido contra cópia.');
+    });
+
+    // Bloqueio de seleção de texto (já coberto pelo no-copy, mas reforçado)
+    document.addEventListener('selectstart', (e) => {
+        e.preventDefault();
+    });
+
+    // Adiciona uma camada transparente sobre o conteúdo para tentar dificultar a captura
+    // Isso pode afetar a interatividade e a acessibilidade.
+    const overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.zIndex = '9999'; // Abaixo dos botões flutuantes, mas acima do conteúdo
+    overlay.style.pointerEvents = 'none'; // Permite cliques através da overlay
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.000001)'; // Quase transparente
+    document.body.appendChild(overlay);
+
+    // Adiciona um evento para detectar quando a janela perde o foco (pode indicar troca de aplicativo para captura)
+    window.addEventListener('blur', () => {
+        console.log('Janela perdeu o foco. Possível tentativa de captura de tela.');
+        // Você pode adicionar lógica aqui, como exibir uma mensagem ou escurecer a tela.
+    });
+});

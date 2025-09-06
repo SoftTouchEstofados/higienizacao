@@ -329,7 +329,7 @@ p {
     display: flex;
     align-items: flex-start;
     font-size: 1.1em;
-    color: #444;
+    color: #999;
 }
 
 .pre-appointment-info .info-list li i {
@@ -403,7 +403,7 @@ p {
 
 .catalog-item .item-description {
     font-size: 0.95em;
-    color: #666;
+    color: #999;
     padding: 0 20px 20px 20px;
     flex-grow: 1; /* Permite que a descrição ocupe o espaço restante */
 }
@@ -487,7 +487,7 @@ p {
 
 #service-detail-content p {
     font-size: 1.1em;
-    color: #555;
+    color: #999;
     margin-bottom: 30px;
     text-align: justify; /* Alinhar texto da descrição */
 }
@@ -516,7 +516,7 @@ p {
 
 .service-benefits li {
     font-size: 1.1em;
-    color: #444;
+    color: #999;
     margin-bottom: 10px;
     position: relative;
     padding-left: 25px;
@@ -535,7 +535,7 @@ p {
     list-style: decimal;
     padding-left: 25px;
     font-size: 1.1em;
-    color: #444;
+    color: #999;
 }
 
 .process-list li {
@@ -543,7 +543,7 @@ p {
 }
 
 .process-list li strong {
-    color: #2c3e50;
+    color: #4682B4;
 }
 
 .process-info {
@@ -1369,6 +1369,51 @@ body.dark-mode .dark-mode-toggle {
 
 body.dark-mode .dark-mode-toggle:hover {
     background-color: #6a9de8;
+}
+
+/* Botão de Compartilhamento */
+.share-button {
+    position: fixed;
+    bottom: 80px; /* Posição acima do dark-mode-toggle */
+    right: 20px;
+    background-color: #20B2AA; /* Cor para o botão de compartilhamento */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.share-button:hover {
+    background-color: #1A938A;
+    transform: scale(1.1);
+}
+
+/* Dark Mode para o botão de compartilhamento */
+body.dark-mode .share-button {
+    background-color: #48D1CC;
+}
+
+body.dark-mode .share-button:hover {
+    background-color: #20B2AA;
+}
+
+/* Ajuste de responsividade para o botão de compartilhamento */
+@media (max-width: 480px) {
+    .share-button {
+        bottom: 70px; /* Ajuste para telas menores */
+        width: 45px;
+        height: 45px;
+        font-size: 1.3em;
+    }
 }
 
 /* Print Styles */
