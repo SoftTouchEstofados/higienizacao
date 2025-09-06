@@ -246,6 +246,13 @@
     </style>
 </head>
 <body>
+    <noscript>
+        <style>
+            body {
+                display: none !important;
+            }
+        </style>
+    </noscript>
     <header class="main-header">
         <div class="container">
             <div class="logo">
@@ -267,7 +274,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="no-copy no-print">
         <section class="hero-section hero-resultados">
             <div class="container">
                 <h1>Resultados que Impressionam</h1>
@@ -282,67 +289,72 @@
 
                 <div class="carousel-wrapper">
                     <div class="carousel-container">
-                        <div class="carousel-track" id="carouselTrack" style="transform: translateX(-1599px);"><div class="carousel-item">
-                    <h3 class="item-title">Sofá da Sala</h3>
-                    <div class="img-comparison">
-                        <div class="img-wrapper">
-                            <img src="Sofa%20Sala%20Antes.jpg" alt="Sofá da Sala - Antes">
-                            <p class="label">Antes</p>
-                            <button class="zoom-button" onclick="openModal('Sofa%20Sala%20Antes.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-item">
+                                <h3 class="item-title">Sofá da Sala</h3>
+                                <div class="img-comparison">
+                                    <div class="img-wrapper">
+                                        <img src="Sofa%20Sala%20Antes.jpg" alt="Sofá da Sala - Antes">
+                                        <p class="label">Antes</p>
+                                        <button class="zoom-button" onclick="openModal('Sofa%20Sala%20Antes.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img src="Sofa%20Sala%20Depois.jpg" alt="Sofá da Sala - Depois">
+                                        <p class="label">Depois</p>
+                                        <button class="zoom-button" onclick="openModal('Sofa%20Sala%20Depois.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <h3 class="item-title">Banco do Carro</h3>
+                                <div class="img-comparison">
+                                    <div class="img-wrapper">
+                                        <img src="Banco%20Carro%20Antes.jpg" alt="Banco do Carro - Antes">
+                                        <p class="label">Antes</p>
+                                        <button class="zoom-button" onclick="openModal('Banco%20Carro%20Antes.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img src="Banco%20Carro%20Depois.jpg" alt="Banco do Carro - Depois">
+                                        <p class="label">Depois</p>
+                                        <button class="zoom-button" onclick="openModal('Banco%20Carro%20Depois.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <h3 class="item-title">Colchão de Casal</h3>
+                                <div class="img-comparison">
+                                    <div class="img-wrapper">
+                                        <img src="Colchao%20Casal%20Antes.jpg" alt="Colchão de Casal - Antes">
+                                        <p class="label">Antes</p>
+                                        <button class="zoom-button" onclick="openModal('Colchao%20Casal%20Antes.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img src="Colchao%20Casal%20Depois.jpg" alt="Colchão de Casal - Depois">
+                                        <p class="label">Depois</p>
+                                        <button class="zoom-button" onclick="openModal('Colchao%20Casal%20Depois.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <h3 class="item-title">Cadeira de Jantar</h3>
+                                <div class="img-comparison">
+                                    <div class="img-wrapper">
+                                        <img src="Cadeira%20Jantar%20Antes.jpg" alt="Cadeira de Jantar - Antes">
+                                        <p class="label">Antes</p>
+                                        <button class="zoom-button" onclick="openModal('Cadeira%20Jantar%20Antes.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img src="Cadeira%20Jantar%20Depois.jpg" alt="Cadeira de Jantar - Depois">
+                                        <p class="label">Depois</p>
+                                        <button class="zoom-button" onclick="openModal('Cadeira%20Jantar%20Depois.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="img-wrapper">
-                            <img src="Sofa%20Sala%20Depois.jpg" alt="Sofá da Sala - Depois">
-                            <p class="label">Depois</p>
-                            <button class="zoom-button" onclick="openModal('Sofa%20Sala%20Depois.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                    </div>
-                </div><div class="carousel-item">
-                    <h3 class="item-title">Banco do Carro</h3>
-                    <div class="img-comparison">
-                        <div class="img-wrapper">
-                            <img src="Banco%20Carro%20Antes.jpg" alt="Banco do Carro - Antes">
-                            <p class="label">Antes</p>
-                            <button class="zoom-button" onclick="openModal('Banco%20Carro%20Antes.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                        <div class="img-wrapper">
-                            <img src="Banco%20Carro%20Depois.jpg" alt="Banco do Carro - Depois">
-                            <p class="label">Depois</p>
-                            <button class="zoom-button" onclick="openModal('Banco%20Carro%20Depois.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                    </div>
-                </div><div class="carousel-item">
-                    <h3 class="item-title">Colchão de Casal</h3>
-                    <div class="img-comparison">
-                        <div class="img-wrapper">
-                            <img src="Colchao%20Casal%20Antes.jpg" alt="Colchão de Casal - Antes">
-                            <p class="label">Antes</p>
-                            <button class="zoom-button" onclick="openModal('Colchao%20Casal%20Antes.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                        <div class="img-wrapper">
-                            <img src="Colchao%20Casal%20Depois.jpg" alt="Colchão de Casal - Depois">
-                            <p class="label">Depois</p>
-                            <button class="zoom-button" onclick="openModal('Colchao%20Casal%20Depois.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                    </div>
-                </div><div class="carousel-item">
-                    <h3 class="item-title">Cadeira de Jantar</h3>
-                    <div class="img-comparison">
-                        <div class="img-wrapper">
-                            <img src="Cadeira%20Jantar%20Antes.jpg" alt="Cadeira de Jantar - Antes">
-                            <p class="label">Antes</p>
-                            <button class="zoom-button" onclick="openModal('Cadeira%20Jantar%20Antes.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                        <div class="img-wrapper">
-                            <img src="Cadeira%20Jantar%20Depois.jpg" alt="Cadeira de Jantar - Depois">
-                            <p class="label">Depois</p>
-                            <button class="zoom-button" onclick="openModal('Cadeira%20Jantar%20Depois.jpg')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                    </div>
-                </div></div>
                     </div>
                     <div class="carousel-navigation">
                         <button class="carousel-button prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-                        <button class="carousel-button next" id="nextBtn" disabled=""><i class="fas fa-chevron-right"></i></button>
+                        <button class="carousel-button next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
 
@@ -368,7 +380,7 @@
                         <div class="stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p>"Profissionais muito cuidadosos và atenciosos. Meu colchão ficou impecável e sem cheiro. Durmo muito melhor agora!"</p>
+                        <p>"Profissionais muito cuidadosos e atenciosos. Meu colchão ficou impecável e sem cheiro. Durmo muito melhor agora!"</p>
                         <span class="client-name">- Mariana L.</span>
                     </div>
                 </div>
@@ -401,163 +413,11 @@
         </div>
     </div>
 
-    <script>
-        // Dados para o carrossel
-        const resultsData = [
-            {
-                title: "Sofá da Sala",
-                before: "Sofa%20Sala%20Antes.jpg",
-                after: "Sofa%20Sala%20Depois.jpg"
-            },
-            {
-                title: "Colchão de Casal",
-                before: "Colchao%20Casal%20Antes.jpg",
-                after: "Colchao%20Casal%20Depois.jpg"
-            },
-            {
-                title: "Cama de Casal",
-                before: "CamaCasal2Antes.jpg",
-                after: "CamaCasal2Depois.jpg"
-            },
-            {
-                title: "Colchão de Casal 3",
-                before: "CamaCasal3Antes.jpg",
-                after: "CamaCasal3Depois.jpg"
-            },
-            {
-                title: "Sofá Sala 2",
-                before: "Sofa2Antes.jpg",
-                after: "Sofa2Depois.jpg"
-            },
-            {
-                title: "Cadeira de Jantar",
-                before: "Cadeira%20Jantar%20Antes.jpg",
-                after: "Cadeira%20Jantar%20Depois.jpg"
-            }
-        ];
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
-        let currentIndex = 0;
-        let itemsPerPage = 1;
-
-        function updateCarousel() {
-            const carouselTrack = document.getElementById('carouselTrack');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-
-            if (!carouselTrack) return;
-
-            const itemWidth = carouselTrack.children[0] ? carouselTrack.children[0].offsetWidth : 0;
-            carouselTrack.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-
-            prevBtn.disabled = currentIndex === 0;
-            nextBtn.disabled = currentIndex >= resultsData.length - itemsPerPage;
-        }
-
-        function populateCarousel() {
-            const carouselTrack = document.getElementById('carouselTrack');
-            if (!carouselTrack) return;
-
-            carouselTrack.innerHTML = '';
-            resultsData.forEach(item => {
-                const carouselItem = document.createElement('div');
-                carouselItem.classList.add('carousel-item');
-                carouselItem.innerHTML = `
-                    <h3 class="item-title">${item.title}</h3>
-                    <div class="img-comparison">
-                        <div class="img-wrapper">
-                            <img src="${item.before}" alt="${item.title} - Antes">
-                            <p class="label">Antes</p>
-                            <button class="zoom-button" onclick="openModal('${item.before}')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                        <div class="img-wrapper">
-                            <img src="${item.after}" alt="${item.title} - Depois">
-                            <p class="label">Depois</p>
-                            <button class="zoom-button" onclick="openModal('${item.after}')"><i class="fas fa-search-plus"></i> Ampliar</button>
-                        </div>
-                    </div>
-                `;
-                carouselTrack.appendChild(carouselItem);
-            });
-
-            function adjustItemsPerPage() {
-                if (window.innerWidth <= 768) {
-                    itemsPerPage = 1;
-                } else {
-                    itemsPerPage = 1;
-                }
-                updateCarousel();
-            }
-
-            document.getElementById('prevBtn').addEventListener('click', () => {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    updateCarousel();
-                }
-            });
-
-            document.getElementById('nextBtn').addEventListener('click', () => {
-                if (currentIndex < resultsData.length - itemsPerPage) {
-                    currentIndex++;
-                    updateCarousel();
-                }
-            });
-
-            window.addEventListener('resize', adjustItemsPerPage);
-            adjustItemsPerPage();
-        }
-
-        // Funções para o Modal de Imagem
-        function openModal(imageSrc) {
-            const modal = document.getElementById("imageModal");
-            const modalImg = document.getElementById("modalImage");
-            const zoomSlider = document.getElementById("zoomSlider");
-            
-            modal.classList.add("show");
-            modalImg.src = imageSrc;
-            modalImg.style.transform = "scale(1)";
-            zoomSlider.value = 100;
-            
-            // Desabilita o scroll da página quando o modal está aberto
-            document.body.style.overflow = "hidden";
-        }
-
-        function closeModal() {
-            const modal = document.getElementById("imageModal");
-            modal.classList.remove("show");
-            
-            // Reabilita o scroll da página
-            document.body.style.overflow = "auto";
-        }
-
-        function adjustZoom() {
-            const modalImg = document.getElementById("modalImage");
-            const zoomSlider = document.getElementById("zoomSlider");
-            const zoomValue = zoomSlider.value;
-            modalImg.style.transform = `scale(${zoomValue / 100})`;
-        }
-
-        // Fechar o modal ao clicar fora da imagem
-        window.onclick = function(event) {
-            const modal = document.getElementById("imageModal");
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-
-        // Fechar o modal com a tecla ESC
-        document.addEventListener('keydown', function(event) {
-            if (event.key === "Escape") {
-                closeModal();
-            }
-        });
-
-        // Inicializar o carrossel quando a página carregar
-        document.addEventListener('DOMContentLoaded', function() {
-            if (window.location.pathname.includes('resultados.html')) {
-                populateCarousel();
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <noscript>
+        <style>
+            body {
+                display: none !important;
+            }
+        </style>
+    </noscript>
     <header class="main-header">
         <div class="container">
             <div class="logo">
@@ -30,7 +37,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="no-copy no-print">
         <section class="hero-section hero-promocoes">
             <div class="container">
                 <h1>Promoções Exclusivas</h1>
@@ -113,10 +120,11 @@
         </div>
     </footer>
 
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <script src="script.js"></script>
-
-
-
 
 </body>
 </html>

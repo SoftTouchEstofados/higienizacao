@@ -25,7 +25,7 @@ const serviceData = {
         ],
         price: "R$ 399,00",
         promoPrice: "R$ 251,37",
-        image: "Renovacao%20Premium.jpg"
+        image: "Renovacao%20Premium.jpg" // Ajuste o caminho da imagem
     },
     "diamante-especializada": {
         title: "Diamante Especializada",
@@ -42,7 +42,7 @@ const serviceData = {
         ],
         price: "R$ 499,00",
         promoPrice: "R$ 314,37",
-        image: "Diamante%20Especializada.jpg"
+        image: "Diamante%20Especializada.jpg" // Ajuste o caminho da imagem
     },
     "renovacao-sensitive": {
         title: "Renovação Sensitive",
@@ -59,7 +59,7 @@ const serviceData = {
         ],
         price: "R$ 429,00",
         promoPrice: "R$ 270,27",
-        image: "Renovacao%20Sensitive.jpg"
+        image: "Renovacao%20Sensitive.jpg" // Ajuste o caminho da imagem
     },
     "diamante-sensitive": {
         title: "Diamante Sensitive",
@@ -79,20 +79,20 @@ const serviceData = {
         ],
         price: "R$ 499,00",
         promoPrice: "R$ 314,37",
-        image: "Diamante%20Sensitive.jpg"
+        image: "Diamante%20Sensitive.jpg" // Ajuste o caminho da imagem
     },
     "blindagem": {
         title: "Blindagem",
         description: "Crie um escudo invisível contra líquidos e manchas. Aplicando a hidrorrepelência a líquidos, produto profissional que cria uma barreira protetora contra líquidos e sujeiras, facilitando a limpeza futura e preservando o investimento no seu estofado. Ideal para prolongar a aparência de novo do estofado ao máximo, pois evitará a sujeira.",
         benefits: [
-            "Repele água, óleos và líquidos",
+            "Repele água, óleos e líquidos",
             "Protege contra manchas",
             "Mantém o tecido limpo por muito mais tempo",
             "Prolonga a vida útil do estofado"
         ],
         price: "R$ 349,00",
         promoPrice: "R$ 219,87",
-        image: "Blindagem.jpg"
+        image: "Blindagem.jpg" // Ajuste o caminho da imagem
     },
     "limpeza-titan": {
         title: "Limpeza Titan",
@@ -105,7 +105,7 @@ const serviceData = {
         ],
         price: "R$ 349,00",
         promoPrice: "R$ 219,87",
-        image: "Limpeza%20Titan.jpg"
+        image: "Limpeza%20Titan.jpg" // Ajuste o caminho da imagem
     },
     "auto-golden-care": {
         title: "Auto Golden Care",
@@ -118,11 +118,11 @@ const serviceData = {
             "Ação prolongada contra recontaminação de até 6 meses",
             "Realce imediato de cor e textura",
             "Toque suave e aparência de novo",
-            "Ficando a critério escolher ou bancos ou tapetes, carpetes và estofados"
+            "Ficando a critério escolher ou bancos ou tapetes, carpetes e estofados"
         ],
         price: "R$ 570,00",
         promoPrice: "R$ 359,10",
-        image: "Auto%20Golden%20Care.png"
+        image: "Auto%20Golden%20Care.png" // Ajuste o caminho da imagem
     },
     "auto-platina-lux": {
         title: "Auto Platina Lux",
@@ -141,7 +141,7 @@ const serviceData = {
         ],
         price: "R$ 750,00",
         promoPrice: "R$ 472,50",
-        image: "Auto%20Platina%20Lux.png"
+        image: "Auto%20Platina%20Lux.png" // Ajuste o caminho da imagem
     },
     "auto-diamond": {
         title: "Auto Diamond",
@@ -166,7 +166,7 @@ const serviceData = {
         ],
         price: "R$ 910,00",
         promoPrice: "R$ 573,30",
-        image: "Auto%20Diamond.jpg"
+        image: "Auto%20Diamond.jpg" // Ajuste o caminho da imagem
     },
     "auto-blindagem-impermax": {
         title: "Auto Blindagem Impermax",
@@ -179,7 +179,7 @@ const serviceData = {
         ],
         price: "R$ 400,00",
         promoPrice: "R$ 252,00",
-        image: "Auto%20Blindagem%20Impermax.png"
+        image: "Auto%20Blindagem%20Impermax.png" // Ajuste o caminho da imagem
     },
     "auto-titan": {
         title: "Auto Titan",
@@ -193,7 +193,7 @@ const serviceData = {
         ],
         price: "R$ 520,00",
         promoPrice: "R$ 327,60",
-        image: "Auto%20Titan.jpg"
+        image: "Auto%20Titan.jpg" // Ajuste o caminho da imagem
     }
 };
 
@@ -301,9 +301,9 @@ const resultsData = [
         after: "Sofa2Depois.jpg"  // Caminho da imagem de alta resolução
     },
     {
-        title: "Cama de Casal 4",
-        before: "CamaCasal2Antes.jpg", // Caminho da imagem de alta resolução
-        after: "CamaCasal2Depois.jpg"  // Caminho da imagem de alta resolução
+        title: "Cadeira de Jantar", // Adicionado o item que faltava
+        before: "Cadeira%20Jantar%20Antes.jpg", // Caminho da imagem de alta resolução
+        after: "Cadeira%20Jantar%20Depois.jpg"  // Caminho da imagem de alta resolução
     }
 ];
 
@@ -426,78 +426,79 @@ document.addEventListener('keydown', function(event) {
 if (window.location.pathname.includes('resultados.html')) {
     document.addEventListener('DOMContentLoaded', function() {
         populateCarousel();
-        
-        // Adiciona event listeners para os botões de navegação do carrossel
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
-        });
-
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            if (currentIndex < resultsData.length - itemsPerPage) {
-                currentIndex++;
-                updateCarousel();
-            }
-        });
+        // Os event listeners já são adicionados dentro de populateCarousel(), não precisa repetir aqui
     });
 }
 
-// --- Funcionalidades Adicionais (Frontend Stubs) ---
+// --- Funcionalidades Adicionais ---
 
-// 1. Contagem de Acessos (Frontend - apenas um placeholder)
-// Para uma contagem real, você precisaria de um backend ou Google Analytics.
-// Exemplo de placeholder:
-// if (localStorage.getItem('site_visits')) {
-//     let visits = parseInt(localStorage.getItem('site_visits'));
-//     visits++;
-//     localStorage.setItem('site_visits', visits);
-// } else {
-//     localStorage.setItem('site_visits', 1);
-// }
-// console.log("Total de visitas (local):", localStorage.getItem('site_visits'));
+// 1. Proteção Anticópia (Bloqueia seleção e clique direito)
+document.addEventListener('DOMContentLoaded', () => {
+    const noCopyElements = document.querySelectorAll('.no-copy');
 
-// 2. Chat (Frontend - apenas um placeholder)
-// Para um chat funcional, você precisaria integrar uma plataforma de chat de terceiros.
-// Exemplo de botão de chat flutuante (adicione ao HTML se quiser):
-/*
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-    <button style="background-color: #2ecc71; color: white; border: none; border-radius: 50%; width: 60px; height: 60px; font-size: 24px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.2);" onclick="openChat()">
-        <i class="fab fa-whatsapp"></i>
-    </button>
-</div>
-<script>
-    function openChat() {
-        // Substitua pelo link do seu WhatsApp ou script de chat
-        window.open('https://wa.me/+5519991908256', '_blank');
-    }
-</script>
-*/
+    noCopyElements.forEach(element => {
+        element.addEventListener('contextmenu', (e) => {
+            e.preventDefault(); // Bloqueia o clique direito
+        });
 
-// 3. Login (Frontend - apenas um placeholder)
-// Para um sistema de login funcional, você precisaria de um backend para autenticação.
-// Exemplo de formulário de login (adicione ao HTML se quiser):
-/*
-<div id="loginModal" style="display:none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
-    <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 400px; border-radius: 10px; text-align: center;">
-        <h2>Login</h2>
-        <input type="text" placeholder="Usuário" style="width: calc(100% - 20px); padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
-        <input type="password" placeholder="Senha" style="width: calc(100% - 20px); padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
-        <button style="background-color: #6a89cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="performLogin()">Entrar</button>
-        <button style="background-color: #ccc; color: #333; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;" onclick="closeLoginModal()">Fechar</button>
-    </div>
-</div>
-<script>
-    function openLoginModal() {
-        document.getElementById('loginModal').style.display = 'block';
+        element.addEventListener('selectstart', (e) => {
+            e.preventDefault(); // Bloqueia a seleção de texto
+        });
+
+        element.addEventListener('copy', (e) => {
+            e.preventDefault(); // Bloqueia a cópia
+            alert('Conteúdo protegido contra cópia.');
+        });
+
+        // Opcional: Bloquear arrastar e soltar (para imagens, por exemplo)
+        element.addEventListener('dragstart', (e) => {
+            e.preventDefault();
+        });
+    });
+});
+
+// 2. Alternar Modo Claro/Escuro
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    // Verifica a preferência do usuário no localStorage ou no sistema
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        if (savedTheme === 'dark-mode') {
+            toggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Ícone de sol para dark mode
+        } else {
+            toggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Ícone de lua para light mode
+        }
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // Se não houver preferência salva, verifica a preferência do sistema
+        body.classList.add('dark-mode');
+        toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('theme', 'dark-mode');
+    } else {
+        toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('theme', 'light-mode');
     }
-    function closeLoginModal() {
-        document.getElementById('loginModal').style.display = 'none';
-    }
-    function performLogin() {
-        alert('Funcionalidade de login requer backend.');
-        // Aqui você enviaria os dados para um servidor para autenticação
-    }
-</script>
-*/
+
+    toggleButton.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            toggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Mudar para ícone de lua
+            localStorage.setItem('theme', 'light-mode');
+        } else {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            toggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Mudar para ícone de sol
+            localStorage.setItem('theme', 'dark-mode');
+        }
+    });
+});
+
+// 3. Ocultar conteúdo se JavaScript estiver desativado (já implementado com <noscript>)
+// A tag <noscript> no HTML já cuida disso. Se o JavaScript estiver desativado, o CSS dentro de <noscript> será aplicado, ocultando o body.
+
+// 4. Proteção Anti-impressão (já implementado no CSS com @media print)
+// A regra `@media print` no `style.css` já oculta o `body` por padrão ao tentar imprimir.
+// Se você adicionou a classe `no-print` a elementos específicos, eles serão ocultados.

@@ -28,6 +28,13 @@
     </style>
 </head>
 <body>
+    <noscript>
+        <style>
+            body {
+                display: none !important;
+            }
+        </style>
+    </noscript>
     <header class="main-header">
         <div class="container">
             <div class="logo">
@@ -49,7 +56,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="no-copy no-print">
         <section class="hero-section hero-catalogo">
             <div class="container">
                 <h1>PROMOÇÃO ESPECIAL - Em todo o site</h1>
@@ -228,12 +235,11 @@
         </div>
     </footer>
 
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <script src="script.js"></script>
-
-
-
-
-
 
 </body>
 </html>
