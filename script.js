@@ -503,29 +503,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // A regra `@media print` no `style.css` já oculta o `body` por padrão ao tentar imprimir.
 // Se você adicionou a classe `no-print` a elementos específicos, eles serão ocultados.
 
-// --- Novo: Botão de Compartilhamento ---
-document.addEventListener('DOMContentLoaded', () => {
-    const shareButton = document.getElementById('shareButton');
-    if (shareButton) {
-        shareButton.addEventListener('click', async () => {
-            if (navigator.share) {
-                try {
-                    await navigator.share({
-                        title: document.title,
-                        url: window.location.href
-                    });
-                    console.log('Página compartilhada com sucesso!');
-                } catch (error) {
-                    console.error('Erro ao compartilhar:', error);
-                }
-            } else {
-                // Fallback para navegadores que não suportam a API Web Share
-                alert('Seu navegador não suporta a função de compartilhamento. Você pode copiar o link manualmente: ' + window.location.href);
-            }
-        });
-    }
-});
-
 // --- Novo: Bloqueio contra Captura de Tela (Experimental e Limitado) ---
 // Esta funcionalidade é experimental e sua eficácia pode variar significativamente
 // entre navegadores, sistemas operacionais e dispositivos. Não é uma garantia de segurança.
